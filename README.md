@@ -1,6 +1,5 @@
 # mycode
 Jello Uorld!  Queue passa?
-What's up?
 
 ## Getting Started
 Instructions to get a copy ...
