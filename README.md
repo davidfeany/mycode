@@ -1,6 +1,5 @@
 # mycode
-Jello Uorld!
-What's up?
+Jello Uorld!  Queue passa?
 
 ## Getting Started
 Instructions to get a copy ...
@@ -9,7 +8,7 @@ Instructions to get a copy ...
 Install this first...
 
 ## Built with
-*[Python](https://www.python.org/) - The coding language used.
+*[Python](https://www.python.org/)
 
 ## Authors
 * **David Feany** *Initial work* - [My Website](https://asdf.com/)
