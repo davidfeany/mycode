@@ -1,0 +1,10 @@
+---
+- name:  Copy a file to everone
+  hosts: napyaclass
+  gather_facts: no
+    
+  tasks:
+    - name: Using the copy command
+      copy:
+        src: yamlearn.yaml
+        dest: yamlearn.yaml_272
