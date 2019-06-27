@@ -1,0 +1,19 @@
+---
+- name: Get contents of home dir
+  hosts: planet-express
+
+  vars_prompt:
+    - name: "lsdir"
+      prompt: "Which directory do you want to see?"
+      #default: "{{ ansible_user_dir }}"
+  
+  tasks:
+    - name: Perform ls on directory
+      command: "ls {{ ansible_user_dir }}/{{ lsdir }}"
+      become: yes
+      register: lsdiroutput
+    
+    - name: Print output
+      debug:
+        msg: "{{ lsdiroutput }}"
+    
