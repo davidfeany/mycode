@@ -1,0 +1,2 @@
+student@napya-272-bchd:~/mycode/eos_conarch$ ansible-playbook arista_conarch.yml -i hosts
+
