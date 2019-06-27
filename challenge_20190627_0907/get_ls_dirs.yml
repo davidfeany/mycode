@@ -5,15 +5,40 @@
   vars_prompt:
     - name: "lsdir"
       prompt: "Which directory do you want to see?"
+      # Set private:no to allow display of the user's input.
+      private: no
       #default: "{{ ansible_user_dir }}"
   
   tasks:
+  # - name: Create /home/<user>/<lsdir>/delthis/A
+  #   command: "mkdir -p {{ ansible_user_dir }}/delthis/A"
+  #   register: output
+  # 
+  # - name: Print output
+  #   debug:
+  #     msg: "{{ output }}"
+  # 
+  # - name: Create /home/<user>/<lsdir>/delthis/B
+  #   command: "mkdir -p {{ ansible_user_dir }}/delthis/B"
+  #   register: output
+  # 
+  # - name: Print output
+  #   debug:
+  #     msg: "{{ output }}"
+    
     - name: Perform ls on directory
       command: "ls {{ ansible_user_dir }}/{{ lsdir }}"
-      become: yes
-      register: lsdiroutput
+      register: output
     
     - name: Print output
       debug:
-        msg: "{{ lsdiroutput }}"
+        msg: "{{ output }}"
+    
+    - name: Print only stdout output
+      debug:
+        msg: "{{ output.stdout }}"
+    
+    - name: Print only stdout lines output
+      debug:
+        msg: "{{ output.stdout_lines }}"
     

@@ -1,0 +1,245 @@
+Script started on 2019-06-27 11:21:40-0400
+Ptmux;]4;0;rgb:00/00/00\\Ptmux;]4;1;rgb:eb/00/8a\\Ptmux;]4;2;rgb:37/b3/49\\Ptmux;]4;3;rgb:f8/ca/12\\Ptmux;]4;4;rgb:0e/5a/94\\Ptmux;]4;5;rgb:b3/1e/8d\\Ptmux;]4;6;rgb:00/aa/bb\\Ptmux;]4;7;rgb:d0/d0/d0\\Ptmux;]4;8;rgb:50/50/50\\Ptmux;]4;9;rgb:eb/00/8a\\Ptmux;]4;10;rgb:37/b3/49\\Ptmux;]4;11;rgb:f8/ca/12\\Ptmux;]4;12;rgb:0e/5a/94\\Ptmux;]4;13;rgb:b3/1e/8d\\Ptmux;]4;14;rgb:00/aa/bb\\Ptmux;]4;15;rgb:ff/ff/ff\\Ptmux;]4;16;rgb:f2/93/33\\Ptmux;]4;17;rgb:7a/2d/00\\Ptmux;]4;18;rgb:20/20/20\\Ptmux;]4;19;rgb:30/30/30\\Ptmux;]4;20;rgb:b0/b0/b0\\Ptmux;]4;21;rgb:e0/e0/e0\\Ptmux;]10;rgb:d0/d0/d0\\Ptmux;]11;rgb:00/00/00\\Ptmux;]12;7\\Ptmux;]4;0;rgb:00/00/00\\Ptmux;]4;1;rgb:eb/00/8a\\Ptmux;]4;2;rgb:37/b3/49\\Ptmux;]4;3;rgb:f8/ca/12\\Ptmux;]4;4;rgb:0e/5a/94\\Ptmux;]4;5;rgb:b3/1e/8d\\Ptmux;]4;6;rgb:00/aa/bb\\Ptmux;]4;7;rgb:d0/d0/d0\\Ptmux;]4;8;rgb:50/50/50\\Ptmux;]4;9;rgb:eb/00/8a\\Ptmux;]4;10;rgb:37/b3/49\\Ptmux;]4;11;rgb:f8/ca/12\\Ptmux;]4;12;rgb:0e/5a/94\\Ptmux;]4;13;rgb:b3/1e/8d\\Ptmux;]4;14;rgb:00/aa/bb\\Ptmux;]4;15;rgb:ff/ff/ff\\Ptmux;]4;16;rgb:f2/93/33\\Ptmux;]4;17;rgb:7a/2d/00\\Ptmux;]4;18;rgb:20/20/20\\Ptmux;]4;19;rgb:30/30/30\\Ptmux;]4;20;rgb:b0/b0/b0\\Ptmux;]4;21;rgb:e0/e0/e0\\Ptmux;]10;rgb:d0/d0/d0\\Ptmux;]11;rgb:00/00/00\\Ptmux;]12;7\\]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ exitssh admin@172.16.2.20exit[K[K
+]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ 
+]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ ansible[K[K[K[K[K[K[K
+]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ 
+]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ 
+]0;student@napya-272-bchd: ~[01;32mstudent@napya-272-bchd[00m:[01;34m~[00m$ cd mycode/challenge_20190627_0907/
+]0;student@napya-272-bchd: ~/mycode/challenge_20190627_0907[01;32mstudent@napya-272-bchd[00m:[01;34m~/mycode/challenge_20190627_0907[00m$ ansible-playbook gi[Ket_ls_dirs.yml 
+[0;35m[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. [0m
+[0;35mThis feature will be removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.[0m
+[1;35m [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details[0m
+[1;35m[0m
+Which directory do you want to see?: .
+
+PLAY [Get contents of home dir] **************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+[0;32mok: [bender][0m
+[0;32mok: [zoidberg][0m
+[0;32mok: [fry][0m
+
+TASK [Perform ls on directory] ***************************************************************************************************************************************************************
+[0;33mchanged: [fry][0m
+[0;33mchanged: [zoidberg][0m
+[0;33mchanged: [bender][0m
+
+TASK [Print output] **************************************************************************************************************************************************************************
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/bender/."[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.004546",[0m
+[0;32m        "end": "2019-06-27 15:22:25.759079",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:25.754533",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "delthis",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "delthis"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/fry/."[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.004314",[0m
+[0;32m        "end": "2019-06-27 15:22:25.679150",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:25.674836",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "delthis",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "delthis"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/zoidberg/."[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.006388",[0m
+[0;32m        "end": "2019-06-27 15:22:25.737128",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:25.730740",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "delthis",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "delthis"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+
+TASK [Print only stdout output] **************************************************************************************************************************************************************
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": "delthis"[0m
+[0;32m}[0m
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": "delthis"[0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": "delthis"[0m
+[0;32m}[0m
+
+TASK [Print only stdout lines output] ********************************************************************************************************************************************************
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "delthis"[0m
+[0;32m    ][0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "delthis"[0m
+[0;32m    ][0m
+[0;32m}[0m
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "delthis"[0m
+[0;32m    ][0m
+[0;32m}[0m
+
+PLAY RECAP ***********************************************************************************************************************************************************************************
+[0;33mbender[0m                     : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mfry[0m                        : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mzoidberg[0m                   : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+]0;student@napya-272-bchd: ~/mycode/challenge_20190627_0907[01;32mstudent@napya-272-bchd[00m:[01;34m~/mycode/challenge_20190627_0907[00m$ ansible-playbook get_ls_dirs.yml 
+[0;35m[DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. [0m
+[0;35mThis feature will be removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.[0m
+[1;35m [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details[0m
+[1;35m[0m
+Which directory do you want to see?: delthis
+
+PLAY [Get contents of home dir] **************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+[0;32mok: [bender][0m
+[0;32mok: [zoidberg][0m
+[0;32mok: [fry][0m
+
+TASK [Perform ls on directory] ***************************************************************************************************************************************************************
+[0;33mchanged: [bender][0m
+[0;33mchanged: [fry][0m
+[0;33mchanged: [zoidberg][0m
+
+TASK [Print output] **************************************************************************************************************************************************************************
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/bender/delthis"[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.004398",[0m
+[0;32m        "end": "2019-06-27 15:22:45.461668",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:45.457270",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "A\nB",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "A",[0m
+[0;32m            "B"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/fry/delthis"[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.003910",[0m
+[0;32m        "end": "2019-06-27 15:22:45.539258",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:45.535348",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "A\nB",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "A",[0m
+[0;32m            "B"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": {[0m
+[0;32m        "changed": true,[0m
+[0;32m        "cmd": [[0m
+[0;32m            "ls",[0m
+[0;32m            "/home/zoidberg/delthis"[0m
+[0;32m        ],[0m
+[0;32m        "delta": "0:00:00.006725",[0m
+[0;32m        "end": "2019-06-27 15:22:45.558067",[0m
+[0;32m        "failed": false,[0m
+[0;32m        "rc": 0,[0m
+[0;32m        "start": "2019-06-27 15:22:45.551342",[0m
+[0;32m        "stderr": "",[0m
+[0;32m        "stderr_lines": [],[0m
+[0;32m        "stdout": "A\nB",[0m
+[0;32m        "stdout_lines": [[0m
+[0;32m            "A",[0m
+[0;32m            "B"[0m
+[0;32m        ][0m
+[0;32m    }[0m
+[0;32m}[0m
+
+TASK [Print only stdout output] **************************************************************************************************************************************************************
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": "A\nB"[0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": "A\nB"[0m
+[0;32m}[0m
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": "A\nB"[0m
+[0;32m}[0m
+
+TASK [Print only stdout lines output] ********************************************************************************************************************************************************
+[0;32mok: [bender] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "A",[0m
+[0;32m        "B"[0m
+[0;32m    ][0m
+[0;32m}[0m
+[0;32mok: [fry] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "A",[0m
+[0;32m        "B"[0m
+[0;32m    ][0m
+[0;32m}[0m
+[0;32mok: [zoidberg] => {[0m
+[0;32m    "msg": [[0m
+[0;32m        "A",[0m
+[0;32m        "B"[0m
+[0;32m    ][0m
+[0;32m}[0m
+
+PLAY RECAP ***********************************************************************************************************************************************************************************
+[0;33mbender[0m                     : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mfry[0m                        : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mzoidberg[0m                   : [0;32mok=5   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+]0;student@napya-272-bchd: ~/mycode/challenge_20190627_0907[01;32mstudent@napya-272-bchd[00m:[01;34m~/mycode/challenge_20190627_0907[00m$ exit
+exit
+
+Script done on 2019-06-27 11:22:59-0400
