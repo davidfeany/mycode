@@ -19,22 +19,24 @@
         msg: "++++++++ {{ item }} ++++++++++"
       loop: "{{ lsoutput.stdout_lines }}"
 
-    - script: /home/student/mycode/myls.pl
-      args:
-        executable: perl
+    # command: ls -l | perl -lne '@a = split(" +", $_);print $a[0..4, $#a]'
+    # command: perl -lne 'foreach(`ls -l`){@a = split(" +", $_);print $a[0..4, $#a]}'
+    # command: perl -lne 'print "Hello World"; print `ls -l`'
+    - name: Grab data from command
+      command: ls -l
       register: lsoutput
-    - name: Loop through data listing using loop
-      debug:
-        msg: "======== {{ item }} =========="
-      loop: "{{ lsoutput.stdout_lines }}"
-
-    #command: ls -l | perl -lne '@a = split(" +", $_);print $a[0..4, $#a]'
-    - name: Loop through data listing using loop
-      command: perl -lne 'foreach(`ls -l`){@a = split(" +", $_);print $a[0..4, $#a]}'
-      register: lsoutput
-    - name: Loop through data listing using loop
+    - name: Loop through data from command listing using loop
       debug:
         msg: "........ {{ item }} .........."
       loop: "{{ lsoutput.stdout_lines }}"
 
+
+    - script: /home/student/mycode/myls.pl
+      args:
+        executable: perl
+      register: lsoutput
+    - name: Loop through data from script listing using loop
+      debug:
+        msg: "======== {{ item }} =========="
+      loop: "{{ lsoutput.stdout_lines }}"
 

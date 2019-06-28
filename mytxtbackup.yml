@@ -1,0 +1,13 @@
+---
+- name: Loop through output
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+  - name: Ansible register with_items example
+    shell: "find *.txt"
+    register: with_output
+
+  - shell: "cp {{ item }} {{item}}_bkp"
+    with_items:
+      - "{{ with_output.stdout_lines }}"

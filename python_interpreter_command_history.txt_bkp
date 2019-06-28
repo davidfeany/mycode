@@ -1,0 +1,11 @@
+import readline
+test = 1
+blah = [1,2,3]
+d = {123: "asdfkl"}
+readline.write_history_file('python_interpreter_command_history.txt')
+with open("python_interpreter_command_history.txt", "r") as fin:
+for line in fin:
+with open("python_interpreter_command_history.txt", "r") as fin:
+    for line in fin:
+        print(line)
+readline.write_history_file('python_interpreter_command_history.txt')
