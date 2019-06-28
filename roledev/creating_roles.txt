@@ -1,0 +1,26 @@
+student@napya-272-bchd:~/mycode/roledev$ mkdir roles
+student@napya-272-bchd:~/mycode/roledev$ cd roles/
+student@napya-272-bchd:~/mycode/roledev/roles$ history > ../command_history.txt
+student@napya-272-bchd:~/mycode/roledev/roles$ vi ../command_history.txt
+student@napya-272-bchd:~/mycode/roledev/roles$ ansible-galaxy init precheck
+- precheck was created successfully
+student@napya-272-bchd:~/mycode/roledev/roles$ ll precheck/vars/
+total 12
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 ./
+drwxr-xr-x 10 student student 4096 Jun 28 09:26 ../
+-rw-r--r--  1 student student   28 Jun 28 09:26 main.yml
+student@napya-272-bchd:~/mycode/roledev/roles$ ll precheck/
+total 44
+drwxr-xr-x 10 student student 4096 Jun 28 09:26 ./
+drwxr-xr-x  3 student student 4096 Jun 28 09:26 ../
+-rw-r--r--  1 student student 1328 Jun 28 09:26 README.md
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 defaults/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 files/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 handlers/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 meta/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 tasks/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 templates/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 tests/
+drwxr-xr-x  2 student student 4096 Jun 28 09:26 vars/
+student@napya-272-bchd:~/mycode/roledev/roles$ 
+

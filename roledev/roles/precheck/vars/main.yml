@@ -1,0 +1,4 @@
+---
+# vars file for precheck
+switchint: 13
+switchver: "4.17"

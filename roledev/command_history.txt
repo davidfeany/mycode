@@ -1,0 +1,266 @@
+    1  ls
+    2  yum install terminator
+    3  apt install terminator
+    4  sudo apt install terminator
+    5  terminator &
+    6  ls -lrt
+    7  cd
+    8  cd mycode
+    9  ./gitupload.scr 
+   10  mkdir usopen
+   11  cd usopen/
+   12  wget https://alta3.com/static/images/python/ip_list.xls -O ip_list.xls
+   13  python3 -m pip install pyexcel pyexcel-xls netmiko
+   14  ll ../../
+   15  cp ../../usopen.py ./
+   16  vi usopen.py 
+   17  ll -rt ~/
+   18  fg
+   19  vi bootstrapper.py
+   20  chmod a+x bootstrapper.py 
+   21  vi usopen.py 
+   22  ./usopen.py 
+   23  vi usopen.py 
+   24  wget https://alta3.com/static/images/python/sw1-clean.comf -O sw1-clean.conf
+   25  wget https://alta3.com/static/images/python/sw2-clan.conf -O sw2-clean.conf
+   26  wget https://alta3.com/static/images/python/sw1_clean.comf -O sw1_clean.conf
+   27  wget https://alta3.com/static/images/python/sw2-clean.conf -O sw2-clean.conf
+   28  wget https://alta3.com/static/images/python/sw1-clean.conf -O sw1-clean.conf
+   29  fg
+   30  vi bootstrapper.py 
+   31  vi usopen.py 
+   32  cd ..
+   33  ./gitupload.scr 
+   34  mkdir yamlintro
+   35  cd yamlintro/
+   36  python3 -m pip install pyyaml
+   37  vi makeyaml01.py
+   38  cp makeyaml01.py makeyaml02.py 
+   39  vi makeyaml02.py 
+   40  vi myYAML.yml
+   41  vi readyaml03.py
+   42  cp readyaml03.py readyaml04.py 
+   43  vi readyaml04.py 
+   44  cd ..
+   45  ansible --version
+   46  mkdir yaml
+   47  cd yaml
+   48  ll
+   49  cd ..
+   50  vi ansible.cfg
+   51  vi hosts
+   52  vi hosts 
+   53  mv hosts hosts.planet
+   54  vi hosts
+   55  perl -le 'print "hi"'
+   56  perl -le 'foreach(267..299){`echo $_`}'
+   57  perl -le 'foreach(267..299){print `echo $_`}'
+   58  perl -le 'foreach(267..299){print `echo $_ >> hosts`}'
+   59  cat hosts
+   60  vi hosts
+   61  perl -le 'foreach(267..299){print `echo napya-$_-bchd >> hosts`}'
+   62  vi hosts
+   63  mv hosts* ansible.cfg yaml
+   64  cd yaml
+   65  ll
+   66  vi copyfile.yml
+   67  ls ..
+   68  ls ../
+   69  ll ../
+   70  ll ../ | grep yam
+   71  ll ../../ | grep yam
+   72  cat ~/yamlearn.yaml 
+   73  vi copyfile.yml 
+   74  vi ansible.cfg 
+   75  which python3
+   76  fg
+   77  vi copyfile.yml 
+   78  vi hosts
+   79  cd ../..
+   80  ll
+   81  ll mod*
+   82  ll mycode
+   83  wget https://alta3.com/static/projects/ansible/modules/setup.sh -O mod-setup.sh
+   84  wget https://alta3.com/static/projects/ansible/modules/max_teardown.sh -O max_teardown.sh
+   85  wget https://alta3.com/static/projects/ansible/max_teardown.sh -O max_teardown.sh
+   86  bash max_teardown.sh
+   87  bash mod-setup.sh 
+   88  cd yaml
+   89  cd mycode/yaml
+   90  cd ..
+   91  cp -Rf yaml yaml2
+   92  cd yaml2
+   93  vi ansible.cfg 
+   94  vi hosts
+   95  ll
+   96  vi ansible.cfg 
+   97  sshbender@10.10.2.3
+   98  ssh bender@10.10.2.3
+   99  cat hosts.planet 
+  100  vim first-playbook.yml
+  101  cat first-playbook.yml 
+  102  ansible-playbook first-playbook.yml
+  103  cp first-playbook.yml second-playbook.yml
+  104  vi second-playbook.yml 
+  105  ansible-playbook second-playbook.yml 
+  106  ansible -m setup nam
+  107  cd ..
+  108  ll
+  109  cd ..
+  110  cd mycode
+  111  ./gitupload.scr 
+  112  cd yaml2/
+  113  ll
+  114  cp first-playbook.yml first-playbook_uninstall.yml 
+  115  ansible-playbook first-playbook_uninstall.yml 
+  116  vi first-playbook_uninstall.yml 
+  117  ansible-playbook first-playbook_uninstall.yml 
+  118  cd ../
+  119  ./gitupload.scr 
+  120  mkdir password
+  121  cd password/
+  122  vi playbook-prompt.yml
+  123  ansible-playbook playbook-prompt.yml 
+  124  ssh fry@10.10.2.4
+  125  cd ..
+  126  mkdir challenge_20190627
+  127  cd challenge_20190627/
+  128  cd ..
+  129  mv challenge_20190627 challenge_20190627_0907
+  130  cd challenge_20190627_0907/
+  131  cd ..
+  132  ll
+  133  find . | grep host
+  134  cp yaml2/hosts* challenge_20190627_0907/
+  135  cp yaml2/ansible.cfg challenge_20190627_0907/
+  136  cd challenge_20190627_0907/
+  137  ll
+  138  vi hosts
+  139  vi ansible.cfg 
+  140  cat hosts.planet 
+  141  vi hosts.planet 
+  142  cat ansible.cfg 
+  143  vi ansible.cfg 
+  144  ll
+  145  ll ..
+  146  fg
+  147  vi get_ls_dirs.yml
+  148  vi ansible.cfg 
+  149  vi get_ls_dirs.yml 
+  150  ansible --version
+  151  fg
+  152  cd
+  153  cd mycode
+  154  mkdir eos_conarch
+  155  cd eos_conarch/
+  156  vi hosts
+  157  ssh admin@172.16.2.10
+  158  ssh admin@172.16.2.2
+  159  ssh admin@172.16.2.20
+  160  vi arista_conarch.yml
+  161  sudo pip install -U pyopenssl
+  162  sudo pip3 install -U pyopenssl
+  163  vi arista_conarch.yml
+  164  fg
+  165  cp hosts hosts.p107
+  166  vi hosts.p107 
+  167  vi ansible.cfg
+  168  ll
+  169  cp arista_conarch.yml agnostic-net.yml
+  170  vi agnostic-net.yml 
+  171  cat hosts.p107 
+  172  cat /home/student/mycode/agnostic/hosts.p107 
+  173  pwd
+  174  fg
+  175  vi ansible.cfg 
+  176  mkdir ../agnostic
+  177  mv ansible.cfg ../agnostic/
+  178  mv hosts.p107 ../agnostic/hosts
+  179  fg
+  180  mv agnostic-net.yml ../agnostic/
+  181  ll
+  182  cd ../agnostic/
+  183  ll
+  184  vi ansible.cfg 
+  185  vi agnostic-net.yml 
+  186  vi ansible.cfg 
+  187  fg
+  188  cp agnostic-net.yml agnostic-net2.yml 
+  189  vi agnostic-net2.yml 
+  190  cd ..
+  191  ./gitupload.scr 
+  192  mkdir recheck
+  193  mkdir -p inv/dev
+  194  mkdir -p inv/prod
+  195  mkdir -p inv/dev/nethowts
+  196  mkdir -p inv/dev/nethosts
+  197  rmdir inv/dev/nethowts/
+  198  vi inv/dev/nethosts
+  199  rmdir inv/dev/nethosts/
+  200  vi inv/dev/nethosts
+  201  mkdir lab_p114
+  202  cd lab_p114/
+  203  ll ..
+  204  cp ../agnostic/ansible.cfg ./
+  205  vi ansible.cfg 
+  206  mkdir precheck
+  207  vi precheck/precheck01.yml
+  208  grep inventory *
+  209  fg
+  210  grep -R inventory ../inv/
+  211  ansible-playbook precheck/precheck01.yml 
+  212  ll
+  213  cat ansible.cfg 
+  214  ll /home/student/mycode/inv/dev/
+  215  ll n*
+  216  ll
+  217  ll precheck/
+  218  fg
+  219  vi precheck/precheck01.yml 
+  220  grep -R facts ../inv/
+  221  grep -R ans ../inv/
+  222  fg
+  223  cp precheck/precheck01.yml precheck/precheck03.yml 
+  224  vi precheck/precheck03.yml 
+  225  cd ..
+  226  ansible-galaxy int firstrole
+  227  ansible-galaxy init firstrole
+  228  ls
+  229  mkdir roles
+  230  ansible-galaxy init firstrole
+  231  cd roles/
+  232  ansible-galaxy init firstrole
+  233  ll
+  234  cd firstrole/
+  235  ll
+  236  cat mai
+  237  cat tasks/main.yml 
+  238  cd ../../
+  239  rmdir firstrole/ -Rf
+  240  rm -Rf firstrole/
+  241  ll
+  242  mkdir lab_p120
+  243  cd lab_p120/
+  244  cd ..
+  245  rmdir lab_p120/
+  246  mkdir roledev
+  247  cd roledev/
+  248  mkdir inv/dev
+  249  mkdir inv/prod
+  250  ll
+  251  mkdir inv
+  252  mkdir inv/dev
+  253  mkdir inv/prod
+  254  cp -Rf ~/mycode/inv/ ./
+  255  ll inv/*
+  256  vi inv/dev/nethosts 
+  257  vi ansible.cfg
+  258  cp ../lab_p114/ansible.cfg ./
+  259  vi ansible.cfg 
+  260  vi precheck2role01.yml
+  261  pwd
+  262  ll
+  263  ll ..
+  264  mkdir roles
+  265  cd roles/
+  266  history > ../command_history.txt

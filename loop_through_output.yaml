@@ -1,0 +1,40 @@
+---
+- name: Loop through output
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Get file listing
+      command: ls -l
+      register: lsoutput
+    - name: Print file listing
+      debug:
+        msg: "{{ lsoutput.stdout_lines }}"
+    - name: Loop through file listing using with_items
+      debug:
+        msg: "-------- {{ item }} ----------"
+      with_items: "{{ lsoutput.stdout_lines }}"
+    - name: Loop through file listing using loop
+      debug:
+        msg: "++++++++ {{ item }} ++++++++++"
+      loop: "{{ lsoutput.stdout_lines }}"
+
+    - script: /home/student/mycode/myls.pl
+      args:
+        executable: perl
+      register: lsoutput
+    - name: Loop through data listing using loop
+      debug:
+        msg: "======== {{ item }} =========="
+      loop: "{{ lsoutput.stdout_lines }}"
+
+    #command: ls -l | perl -lne '@a = split(" +", $_);print $a[0..4, $#a]'
+    - name: Loop through data listing using loop
+      command: perl -lne 'foreach(`ls -l`){@a = split(" +", $_);print $a[0..4, $#a]}'
+      register: lsoutput
+    - name: Loop through data listing using loop
+      debug:
+        msg: "........ {{ item }} .........."
+      loop: "{{ lsoutput.stdout_lines }}"
+
+
